@@ -1,0 +1,33 @@
+{
+    "name": "approvedio/laravel-tailwind-config",
+    "description": "Get access to the tailwind config values in your Laravel Project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Boffey",
+            "email": "michael@approved.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "ApprovedDigital\\LaravelTailwindConfig\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ApprovedDigital\\LaravelTailwindConfig\\LaravelTailwindConfigServiceProvider"
+            ],
+            "aliases": {
+                "Tailwind": "ApprovedDigital\\LaravelTailwindConfig\\Facades\\Tailwind"
+            }
+        }
+    }
+}
