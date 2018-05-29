@@ -37,15 +37,15 @@ Tailwind::get('colors.red-light', '#FF0000');
 You can use the helper method
 
 ```php
-tailwind('colors.ted-light', '#FF0000');
+tailwind('colors.red-light', '#FF0000');
 ```
 
 ## Config
 
-By default we assume your tailwind config file is called tailwind.js in the root of your project. you can override this configuration by publishing the config and updating the path to your tailwind.js file.
+By default we assume your tailwind config file is called tailwind.json in the root of your project. you can override this configuration by publishing the config and updating the path to your tailwind.json file.
 
 ```php
-'tailwind_config_file' => base_path('tailwind.json'),
+'cache_path' => base_path('tailwind.json'),
 ```
 
 To generate the tailwind.json file from your config you will need to add the following Mix extension to your webpack.mix.js
