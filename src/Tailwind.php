@@ -17,7 +17,7 @@ class Tailwind {
 
     public function get($key = null, $default = null)
     {
-        return Arr::get($key, $default);
+        return Arr::get($this->tailwindValues, $key, $default);
     }
 
     public function config($key, $default = null)
